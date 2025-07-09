@@ -1,0 +1,18 @@
+programa
+{
+	
+	funcao inicio()
+	{
+inteiro n1, n2, n3, n4
+		escreva("diga quatro numeros\n")
+		leia(n1, n2, n3, n4)
+
+		se (n1 > n2 e n1 > n3 e n1 > n4){
+			escreva("o numero ", n1, " é maior.")
+		se (n2 > n1 e n2 > n3 e n2 > n4)
+			escreva("o numero ", n2, " é maior.")
+		se (n4 > n1 e n4 > n2 e n4 > n3)
+			escreva("o numero ", n3, " é maior.")
+		}
+	}
+}
