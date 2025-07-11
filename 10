@@ -1,0 +1,16 @@
+programa
+{
+	
+	funcao inicio()
+	{
+inteiro velocidade
+
+		escreva("diga a velocidade do seu carro!\n")
+		leia(velocidade)
+
+		se (velocidade > 80){
+			escreva("Você foi multado por ultrapassar a velocidade permitida, pague ", (velocidade - 80) * 7, " reais.")
+			
+		}
+	}
+}
