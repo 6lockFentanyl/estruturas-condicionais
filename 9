@@ -10,16 +10,38 @@ cadeia letra
 	leia(letra)
 
 	se (letra == "a" ou letra == "e" ou letra == "i" ou letra == "o" ou letra == "u"){
-		escreva("a letra é uma vogal")
+		escreva("a letra é uma vogal.\n\n")
 		
 	}senao{
-		escreva("a letra é uma consoante")
-
-//programa ano
-
+		escreva("a letra é uma consoante.\n\n")
+	}
 	
 
 
-	}
+//programa ano
+
+inteiro ano
+
+		escreva("diga um ano\n")
+		leia(ano)
+//verifica se o ano é menor ou igual a zero.
+			se (ano <= 0){
+				ano = 2025
+			}
+//verifica se ele é um ano bissexto ou não.
+			se (ano % 4 != 0){
+				escreva("O ano não é bissexto (tem 365 dias).")
+			}senao{	
+				se (ano % 100 != 0){
+					escreva("O ano é bissexto (tem 366 dias).")
+				}senao{
+					
+					se (ano % 400 == 0){
+						escreva("O ano é bissexto (tem 366 dias).")
+					}senao{
+						escreva("O ano não é bissexto (tem 365 dias).")
+				}				
+			}
+		}
 	}
 }
