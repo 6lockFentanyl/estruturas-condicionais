@@ -1,0 +1,76 @@
+programa
+{
+	
+	funcao inicio()
+	{
+logico continuar = verdadeiro
+
+		escreva("                 -Menu-                   \n")
+		escreva("   100     -Cachorro-Quente-     R$5.00   \n")
+		escreva("   101     -Bauru-               R$2.60   \n")
+		escreva("   102     -Bauru c/ovo-         R$3.80   \n")
+		escreva("   103     -Hamburger-           R$9.00   \n")
+		escreva("   104     -Cheeseburger-        R$11.00  \n")
+		escreva("   105     -Refrigerante-        R$3.00   \n")
+		escreva("   106     -Semente dos Deuses-  R$1000.00\n")
+		escreva("   0       -Sair                          \n")
+
+inteiro codigo, quantidade
+real valor_total = 0
+
+		enquanto (continuar == verdadeiro){
+		
+		escreva("qual o codigo do menu você deseja?\n")
+		leia(codigo)
+
+		escolha(codigo){
+			caso 100:
+			escreva("Quantas unidades?\n")
+			leia(quantidade)
+			valor_total = valor_total + (5.00 * quantidade)
+			pare
+			
+			caso 101:
+			escreva("Quantas unidades?\n")
+			leia(quantidade)
+			valor_total = valor_total + (2.60 * quantidade)
+			pare
+
+			caso 102:
+			escreva("Quantas unidades?\n")
+			leia(quantidade)
+			valor_total = valor_total + (3.80 * quantidade)
+			pare
+
+			caso 103:
+			escreva("Quantas unidades?\n")
+			leia(quantidade)
+			valor_total = valor_total + (9.00 * quantidade)
+			pare
+			
+			caso 104:
+			escreva("Quantas unidades?\n")
+			leia(quantidade)
+			valor_total = valor_total + (11.00 * quantidade)
+			pare
+			
+			caso 105:
+			escreva("Quantas unidades?\n")
+			leia(quantidade)
+			valor_total = valor_total + (3.00 * quantidade)
+			pare
+			
+			caso 106:
+			escreva("Quantas unidades?\n")
+			leia(quantidade)
+			valor_total = valor_total + (1000.00 * quantidade)
+			pare
+
+			caso 0:
+			escreva("O valor total a pagar é:", valor_total)
+			continuar = falso			
+			
+			}
+		}
+	}
+}
